@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BuildingBase">
+    <ThingDef ParentName="PortableStoveBase">
         <defName>PortableArchotechStove</defName>
         <label>archotech camping stove</label>
         <description>
@@ -9,7 +9,6 @@
             Built by an advanced AI, its exact function is beyond even the most sophisticated human scientists.
         </description>
         <thingClass>Building_WorkTable</thingClass>
-        <minifiedDef>MinifiedThing</minifiedDef>
         <graphicData>
             <texPath>Things/Building/Misc/Campfire</texPath>
             <!--
@@ -24,43 +23,20 @@
             </damageData>
         </graphicData>
         <uiIconPath>Things/Building/Misc/Campfire_MenuIcon</uiIconPath>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <pathCost>50</pathCost>
-        <castEdgeShadows>true</castEdgeShadows>
-        <constructEffect>ConstructMetal</constructEffect>
         <costList>
-            <Steel>10</Steel>
+            <Steel>50</Steel>
         </costList>
-        <tickerType>Normal</tickerType>
-        <drawerType>RealtimeOnly</drawerType>
-        <fillPercent>0.20</fillPercent>
-        <useHitPoints>True</useHitPoints>
+        <useHitPoints>False</useHitPoints>
         <statBases>
             <WorkToBuild>500</WorkToBuild>
             <MaxHitPoints>100</MaxHitPoints>
             <Flammability>0.0</Flammability>
         </statBases>
-        <size>(1,1)</size>
-        <designationCategory>Temperature</designationCategory>
-        <category>Building</category>
-        <hasInteractionCell>True</hasInteractionCell>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-        <recipes>
-            <li>CookMealSimple</li>
-        </recipes>
-        <inspectorTabs>
-            <li>ITab_Bills</li>
-        </inspectorTabs>
         <comps>
             <li Class="CompProperties_Glower">
                 <glowRadius>10</glowRadius>
                 <glowColor>(252,187,113,0)</glowColor>
             </li>
         </comps>
-        <building>
-            <isMealSource>true</isMealSource>
-            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-        </building>
     </ThingDef>
 </Defs>

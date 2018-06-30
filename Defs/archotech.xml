@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="BuildingBase">
-        <defName>PortableWoodStove</defName>
-        <label>hobo stove</label>
-        <description>A portable wood-fueled stove, that can boil water and cook basic food.</description>
-        <thingClass>Building_WorkTable_HeatPush</thingClass>
+        <defName>PortableArchotechStove</defName>
+        <label>archotech camping stove</label>
+        <description>
+            A portable archotech camping stove, that can boil water and cook basic food.
+            It runs forever, and has no known fuel source; Not even an advanced radioisotope decay cell, or cold fusion.
+            Built by an advanced AI, its exact function is beyond even the most sophisticated human scientists.
+        </description>
+        <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Building/Misc/Campfire</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -29,16 +33,12 @@
         <useHitPoints>True</useHitPoints>
         <statBases>
             <WorkToBuild>500</WorkToBuild>
-            <MaxHitPoints>20</MaxHitPoints>
-            <Flammability>0.1</Flammability>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0.0</Flammability>
         </statBases>
         <size>(1,1)</size>
         <designationCategory>Temperature</designationCategory>
         <category>Building</category>
-        <placeWorkers>
-            <li>PlaceWorker_Heater</li>
-        </placeWorkers>
-        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <recipes>
@@ -48,32 +48,9 @@
             <li>ITab_Bills</li>
         </inspectorTabs>
         <comps>
-            <li Class="CompProperties_Refuelable">
-                <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
-                <fuelConsumptionRate>5.0</fuelConsumptionRate>  <!-- per day!-->
-                <fuelCapacity>10.0</fuelCapacity>
-                <fuelConsumptionPerTickInRain>0.0003</fuelConsumptionPerTickInRain>
-                <fuelFilter>
-                    <thingDefs>
-                        <li>WoodLog</li>
-                    </thingDefs>
-                </fuelFilter>
-                <initialFuelPercent>1</initialFuelPercent>
-            </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>10</glowRadius>
                 <glowColor>(252,187,113,0)</glowColor>
-            </li>
-            <li Class="CompProperties_HeatPusher">
-                <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>5</heatPerSecond>
-                <heatPushMaxTemperature>15</heatPushMaxTemperature>
-            </li>
-            <li Class="CompProperties_FireOverlay">
-                <fireSize>1</fireSize>
-            </li>
-            <li>
-                <compClass>CompGatherSpot</compClass>
             </li>
         </comps>
         <building>

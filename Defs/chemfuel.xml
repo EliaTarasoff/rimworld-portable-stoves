@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="BuildingBase">
-        <defName>PortableWoodStove</defName>
-        <label>hobo stove</label>
-        <description>A portable wood-fueled stove, that can boil water and cook basic food.</description>
+        <defName>PortableChemfuelStove</defName>
+        <label>chemfuel stove</label>
+        <description>A portable chemfuel stove, that can boil water and cook basic food.</description>
         <thingClass>Building_WorkTable_HeatPush</thingClass>
         <graphicData>
             <texPath>Things/Building/Misc/Campfire</texPath>
@@ -21,24 +21,20 @@
         <castEdgeShadows>true</castEdgeShadows>
         <constructEffect>ConstructMetal</constructEffect>
         <costList>
-            <Steel>10</Steel>
+            <Steel>30</Steel>
         </costList>
         <tickerType>Normal</tickerType>
         <drawerType>RealtimeOnly</drawerType>
         <fillPercent>0.20</fillPercent>
         <useHitPoints>True</useHitPoints>
         <statBases>
-            <WorkToBuild>500</WorkToBuild>
-            <MaxHitPoints>20</MaxHitPoints>
-            <Flammability>0.1</Flammability>
+            <WorkToBuild>1000</WorkToBuild>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>0.05</Flammability>
         </statBases>
         <size>(1,1)</size>
         <designationCategory>Temperature</designationCategory>
         <category>Building</category>
-        <placeWorkers>
-            <li>PlaceWorker_Heater</li>
-        </placeWorkers>
-        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <recipes>
@@ -49,31 +45,27 @@
         </inspectorTabs>
         <comps>
             <li Class="CompProperties_Refuelable">
-                <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
-                <fuelConsumptionRate>5.0</fuelConsumptionRate>  <!-- per day!-->
-                <fuelCapacity>10.0</fuelCapacity>
-                <fuelConsumptionPerTickInRain>0.0003</fuelConsumptionPerTickInRain>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <fuelConsumptionRate>5.0</fuelConsumptionRate>  <!-- per day...even when it's only-while-used? -->
+                <fuelCapacity>15.0</fuelCapacity>
                 <fuelFilter>
                     <thingDefs>
-                        <li>WoodLog</li>
+                        <li>Chemfuel</li>
                     </thingDefs>
                 </fuelFilter>
                 <initialFuelPercent>1</initialFuelPercent>
             </li>
             <li Class="CompProperties_Glower">
-                <glowRadius>10</glowRadius>
-                <glowColor>(252,187,113,0)</glowColor>
+                <glowRadius>5</glowRadius>
+                <glowColor>(0,100,100,0)</glowColor>
             </li>
             <li Class="CompProperties_HeatPusher">
                 <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>5</heatPerSecond>
+                <heatPerSecond>10</heatPerSecond>
                 <heatPushMaxTemperature>15</heatPushMaxTemperature>
             </li>
             <li Class="CompProperties_FireOverlay">
-                <fireSize>1</fireSize>
-            </li>
-            <li>
-                <compClass>CompGatherSpot</compClass>
+                <fireSize>0.5</fireSize>
             </li>
         </comps>
         <building>

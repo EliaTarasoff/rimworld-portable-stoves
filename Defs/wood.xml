@@ -5,6 +5,7 @@
         <label>hobo stove</label>
         <description>A portable wood-fueled stove, that can boil water and cook basic food.</description>
         <thingClass>Building_WorkTable_HeatPush</thingClass>
+        <minifiedDef>MinifiedThing</minifiedDef>
         <graphicData>
             <texPath>Things/Building/Misc/Campfire</texPath>
             <graphicClass>Graphic_Single</graphicClass>

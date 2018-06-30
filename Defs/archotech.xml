@@ -9,6 +9,7 @@
             Built by an advanced AI, its exact function is beyond even the most sophisticated human scientists.
         </description>
         <thingClass>Building_WorkTable</thingClass>
+        <minifiedDef>MinifiedThing</minifiedDef>
         <graphicData>
             <texPath>Things/Building/Misc/Campfire</texPath>
             <!--

@@ -11,6 +11,10 @@
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Building/Misc/Campfire</texPath>
+            <!--
+            I can't figure out how to get custom graphics. I think they need a special file formal. :C
+            <texPath>archotech_terrible_art.png</texPath>
+            -->
             <graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
             <allowFlip>false</allowFlip>

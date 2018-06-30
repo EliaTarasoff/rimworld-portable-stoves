@@ -3,11 +3,7 @@
     <ThingDef ParentName="PortableStoveBase">
         <defName>PortableArchotechStove</defName>
         <label>archotech camping stove</label>
-        <description>
-            A portable archotech camping stove, that can boil water and cook basic food.
-            It runs forever, and has no known fuel source; Not even an advanced radioisotope decay cell, or cold fusion.
-            Built by an advanced AI, its exact function is beyond even the most sophisticated human scientists.
-        </description>
+        <description>A portable archotech camping stove, that can boil water and cook basic food. It runs forever, and has no known fuel source; Not even an advanced radioisotope decay cell, or cold fusion. Built by an advanced AI, its exact function is beyond even the most sophisticated human scientists.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Building/Misc/Campfire</texPath>

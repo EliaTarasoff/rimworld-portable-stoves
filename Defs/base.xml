@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <WorkGiverDef>
+        <defName>DoBillsCookPortableStove</defName>
+        <label>cook meals at camping stove</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Cooking</workType>
+        <priorityInType>95</priorityInType>
+        <fixedBillGiverDefs>
+            <li>PortableWoodStove</li>
+            <li>PortableChemfuelStove</li>
+            <li>PortableArchotechStove</li>
+        </fixedBillGiverDefs>
+        <verb>cook</verb>
+        <gerund>cooking at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
     <ThingDef Name="PortableStoveBase" ParentName="BuildingBase" Abstract="True">
         <!--
         <defName>PortableStoveBase</defName>

@@ -6,11 +6,7 @@
         <description>A portable archotech camping stove, that can boil water and cook basic food. It runs forever, and has no known fuel source; Not even an advanced radioisotope decay cell, or cold fusion. Built by an advanced AI, its exact function is beyond even the most sophisticated human scientists.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
-            <texPath>Things/Building/Misc/Campfire</texPath>
-            <!--
-            I can't figure out how to get custom graphics. I think they need a special file formal. :C
-            <texPath>archotech_terrible_art.png</texPath>
-            -->
+            <texPath>archotech</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
             <allowFlip>false</allowFlip>

@@ -34,7 +34,6 @@
             </damageData>
         </graphicData>
         <uiIconPath>Things/Building/Misc/Campfire_MenuIcon</uiIconPath>
-        <altitudeLayer>Building</altitudeLayer>
 
         <comps>
             <li Class="CompProperties_Refuelable">

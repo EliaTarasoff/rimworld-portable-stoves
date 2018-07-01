@@ -7,9 +7,9 @@
         <workType>Cooking</workType>
         <priorityInType>95</priorityInType>
         <fixedBillGiverDefs>
-            <li>PortableWoodStove</li>
-            <li>PortableChemfuelStove</li>
-            <li>PortableArchotechStove</li>
+            <li>PortableStoveWood</li>
+            <li>PortableStoveChemfuel</li>
+            <li>PortableStoveArchotech</li>
         </fixedBillGiverDefs>
         <verb>cook</verb>
         <gerund>cooking at</gerund>

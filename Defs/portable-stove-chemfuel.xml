@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="PortableStoveBase">
-        <defName>PortableChemfuelStove</defName>
+        <defName>PortableStoveChemfuel</defName>
         <label>chemfuel stove</label>
         <description>A portable chemfuel stove, that can boil water and cook basic food.</description>
 

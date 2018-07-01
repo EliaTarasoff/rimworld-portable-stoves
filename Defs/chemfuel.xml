@@ -35,7 +35,7 @@
                 <initialFuelPercent>1</initialFuelPercent>
             </li>
             <li Class="CompProperties_Glower">
-                <glowRadius>5</glowRadius>
+                <glowRadius>2</glowRadius>
                 <glowColor>(0,100,100,0)</glowColor>
             </li>
             <li Class="CompProperties_HeatPusher">

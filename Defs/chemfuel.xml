@@ -4,6 +4,26 @@
         <defName>PortableChemfuelStove</defName>
         <label>chemfuel stove</label>
         <description>A portable chemfuel stove, that can boil water and cook basic food.</description>
+
+        <recipeMaker>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Steel>30</Steel>
+        </costList>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>0.05</Flammability>
+            <Mass>5</Mass>
+            <MarketValue>100</MarketValue>
+        </statBases>
+
         <graphicData>
             <texPath>Things/Building/Misc/Campfire</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -14,14 +34,7 @@
             </damageData>
         </graphicData>
         <uiIconPath>Things/Building/Misc/Campfire_MenuIcon</uiIconPath>
-        <costList>
-            <Steel>30</Steel>
-        </costList>
-        <statBases>
-            <WorkToBuild>1000</WorkToBuild>
-            <MaxHitPoints>50</MaxHitPoints>
-            <Flammability>0.05</Flammability>
-        </statBases>
+
         <comps>
             <li Class="CompProperties_Refuelable">
                 <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>

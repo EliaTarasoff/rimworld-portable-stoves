@@ -4,6 +4,26 @@
         <defName>PortableWoodStove</defName>
         <label>hobo stove</label>
         <description>A portable wood-fueled stove, that can boil water and cook basic food.</description>
+
+        <recipeMaker>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Steel>10</Steel>
+        </costList>
+        <statBases>
+            <WorkToBuild>500</WorkToBuild>
+            <MaxHitPoints>20</MaxHitPoints>
+            <Flammability>0.1</Flammability>
+            <Mass>1</Mass>
+            <MarketValue>20</MarketValue>
+        </statBases>
+
         <graphicData>
             <texPath>Things/Building/Misc/Campfire</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -15,14 +35,7 @@
         </graphicData>
         <uiIconPath>Things/Building/Misc/Campfire_MenuIcon</uiIconPath>
         <altitudeLayer>Building</altitudeLayer>
-        <costList>
-            <Steel>10</Steel>
-        </costList>
-        <statBases>
-            <WorkToBuild>500</WorkToBuild>
-            <MaxHitPoints>20</MaxHitPoints>
-            <Flammability>0.1</Flammability>
-        </statBases>
+
         <comps>
             <li Class="CompProperties_Refuelable">
                 <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>

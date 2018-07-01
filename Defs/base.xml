@@ -7,6 +7,9 @@
         -->
         <thingClass>Building_WorkTable_HeatPush</thingClass>
         <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsProduction</li>
+        </thingCategories>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
@@ -17,7 +20,10 @@
         <fillPercent>0.20</fillPercent>
         <useHitPoints>True</useHitPoints>
         <size>(1,1)</size>
+        <!--
+        This would make it buildable under the Temperature menu.
         <designationCategory>Temperature</designationCategory>
+        -->
         <placeWorkers>
             <li>PlaceWorker_Heater</li>
         </placeWorkers>

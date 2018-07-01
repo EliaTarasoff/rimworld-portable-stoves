@@ -15,14 +15,10 @@
             </damageData>
         </graphicData>
         <uiIconPath>archotech</uiIconPath>
-        <costList>
-            <Steel>50</Steel>
-        </costList>
         <useHitPoints>False</useHitPoints>
         <statBases>
-            <WorkToBuild>500</WorkToBuild>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Flammability>0.0</Flammability>
+            <Mass>2</Mass>
+            <MarketValue>200</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Glower">

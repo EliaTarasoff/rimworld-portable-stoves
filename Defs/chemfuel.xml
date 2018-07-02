@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef ParentName="PortableStoveBase">
         <defName>PortableStoveChemfuel</defName>
-        <label>chemfuel stove</label>
+        <label>chemfuel camping stove</label>
         <description>A portable chemfuel stove, that can boil water and cook basic food.</description>
 
         <recipeMaker>

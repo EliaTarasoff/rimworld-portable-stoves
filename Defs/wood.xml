@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef ParentName="PortableStoveBase">
         <defName>PortableStoveWood</defName>
-        <label>hobo stove</label>
+        <label>wood-burning camping stove</label>
         <description>A portable wood-fueled stove, that can boil water and cook basic food.</description>
 
         <recipeMaker>

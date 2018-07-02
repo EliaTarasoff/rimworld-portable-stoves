@@ -17,7 +17,7 @@
         <uiIconPath>archotech</uiIconPath>
         <useHitPoints>False</useHitPoints>
         <statBases>
-            <Mass>2</Mass>
+            <Mass>5</Mass>
             <MarketValue>200</MarketValue>
         </statBases>
         <comps>

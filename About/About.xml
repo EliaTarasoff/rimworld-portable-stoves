@@ -3,6 +3,6 @@
     <name>ET's Portable Stoves</name>
     <author>Elia Tarasoff</author>
     <url>https://github.com/EliaTarasoff/rimworld-portable-stoves</url>
-    <description>Small, portable stoves.</description>
     <targetVersion>1.0.1950</targetVersion>
+    <description>This adds small, portable camping stoves. The wood-burning and chemfuel-burning ones are built at the machining table, and the archotech stove can be used for custom scenarios.</description>
 </ModMetaData>

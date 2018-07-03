@@ -39,6 +39,7 @@
             <Flammability>0.1</Flammability>
             <Mass>1</Mass>
             <MarketValue>20</MarketValue>
+            <WorkTableWorkSpeedFactor>0.8</WorkTableWorkSpeedFactor> <!--This is actually functionality...-->
         </statBases>
 
         <!--How it functions-->

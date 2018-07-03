@@ -24,6 +24,7 @@
         <statBases>
             <Mass>3</Mass>
             <MarketValue>200</MarketValue>
+            <WorkTableWorkSpeedFactor>0.95</WorkTableWorkSpeedFactor> <!--This is actually functionality...-->
         </statBases>
 
         <!--How it functions-->

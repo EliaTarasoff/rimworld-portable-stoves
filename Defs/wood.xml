@@ -5,6 +5,23 @@
         <label>wood-burning camping stove</label>
         <description>A portable wood-fueled stove, that can boil water and cook basic food.</description>
 
+        <!--Visuals-->
+        <graphicData>
+            <texPath>wood</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <allowFlip>false</allowFlip>
+            <damageData>
+                <rect>(0.2,0,0.6,0.1)</rect>
+            </damageData>
+        </graphicData>
+        <uiIconPath>wood</uiIconPath>
+        <placeWorkers>
+            <li>PlaceWorker_Heater</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+
+        <!--Construction costs, prereqs, etc-->
         <recipeMaker>
             <recipeUsers>
                 <li>TableMachining</li>
@@ -24,17 +41,7 @@
             <MarketValue>20</MarketValue>
         </statBases>
 
-        <graphicData>
-            <texPath>wood</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawRotated>false</drawRotated>
-            <allowFlip>false</allowFlip>
-            <damageData>
-                <rect>(0.2,0,0.6,0.1)</rect>
-            </damageData>
-        </graphicData>
-        <uiIconPath>wood</uiIconPath>
-
+        <!--How it functions-->
         <comps>
             <li Class="CompProperties_Refuelable">
                 <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
@@ -48,20 +55,22 @@
                 </fuelFilter>
                 <initialFuelPercent>1</initialFuelPercent>
             </li>
-            <li Class="CompProperties_Glower">
-                <glowRadius>5</glowRadius>
-                <glowColor>(252,187,113,0)</glowColor>
-            </li>
             <li Class="CompProperties_HeatPusher">
                 <compClass>CompHeatPusherPowered</compClass>
                 <heatPerSecond>5</heatPerSecond>
                 <heatPushMaxTemperature>15</heatPushMaxTemperature>
             </li>
+            <li>
+                <compClass>CompGatherSpot</compClass>
+            </li>
+
+            <!--Too bad this can't go with the other visual stuff...-->
             <li Class="CompProperties_FireOverlay">
                 <fireSize>0.7</fireSize>
             </li>
-            <li>
-                <compClass>CompGatherSpot</compClass>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(252,187,113,0)</glowColor>
             </li>
         </comps>
     </ThingDef>

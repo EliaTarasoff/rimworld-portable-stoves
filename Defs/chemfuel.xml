@@ -5,6 +5,23 @@
         <label>chemfuel camping stove</label>
         <description>A portable chemfuel stove, that can boil water and cook basic food.</description>
 
+        <!--Visuals-->
+        <graphicData>
+            <texPath>chemfuel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <allowFlip>false</allowFlip>
+            <damageData>
+                <rect>(0.2,0,0.6,0.1)</rect>
+            </damageData>
+        </graphicData>
+        <uiIconPath>chemfuel</uiIconPath>
+        <placeWorkers>
+            <li>PlaceWorker_Heater</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+
+        <!--Construction costs, prereqs, etc-->
         <recipeMaker>
             <recipeUsers>
                 <li>TableMachining</li>
@@ -24,17 +41,7 @@
             <MarketValue>100</MarketValue>
         </statBases>
 
-        <graphicData>
-            <texPath>chemfuel</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawRotated>false</drawRotated>
-            <allowFlip>false</allowFlip>
-            <damageData>
-                <rect>(0.2,0,0.6,0.1)</rect>
-            </damageData>
-        </graphicData>
-        <uiIconPath>chemfuel</uiIconPath>
-
+        <!--How it functions-->
         <comps>
             <li Class="CompProperties_Refuelable">
                 <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -47,14 +54,16 @@
                 </fuelFilter>
                 <initialFuelPercent>1</initialFuelPercent>
             </li>
-            <li Class="CompProperties_Glower">
-                <glowRadius>2</glowRadius>
-                <glowColor>(0,100,100,0)</glowColor>
-            </li>
             <li Class="CompProperties_HeatPusher">
                 <compClass>CompHeatPusherPowered</compClass>
                 <heatPerSecond>10</heatPerSecond>
                 <heatPushMaxTemperature>15</heatPushMaxTemperature>
+            </li>
+
+            <!--Too bad this can't go with the other visual stuff...-->
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(0,100,100,0)</glowColor>
             </li>
         </comps>
     </ThingDef>

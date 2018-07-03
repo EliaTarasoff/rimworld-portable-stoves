@@ -4,27 +4,30 @@
         <defName>PortableStoveArchotech</defName>
         <label>archotech camping stove</label>
         <description>A portable archotech camping stove, that can boil water and cook basic food. It runs forever, and has no known fuel source; Not even an advanced radioisotope decay cell, or cold fusion. Built by an advanced AI, its exact function is beyond even the most sophisticated human scientists.</description>
-        <thingClass>Building_WorkTable</thingClass>
+
+        <!--Visuals-->
         <graphicData>
             <texPath>archotech</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
             <allowFlip>false</allowFlip>
-            <damageData>
-                <rect>(0.2,0,0.6,0.1)</rect>
-            </damageData>
         </graphicData>
         <uiIconPath>archotech</uiIconPath>
-        <useHitPoints>False</useHitPoints>
-        <statBases>
-            <Mass>5</Mass>
-            <MarketValue>200</MarketValue>
-        </statBases>
         <comps>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
                 <glowColor>(150,0,0,0)</glowColor>
             </li>
         </comps>
+
+        <!--Construction costs, prereqs, etc-->
+        <statBases>
+            <Mass>3</Mass>
+            <MarketValue>200</MarketValue>
+        </statBases>
+
+        <!--How it functions-->
+        <thingClass>Building_WorkTable</thingClass>
+        <useHitPoints>False</useHitPoints>
     </ThingDef>
 </Defs>

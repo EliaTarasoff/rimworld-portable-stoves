@@ -61,7 +61,7 @@
                 <heatPushMaxTemperature>15</heatPushMaxTemperature>
             </li>
 
-            <!--Too bad this can't go with the other visual stuff...-->
+            <!--This isn't just visual - it affects the light-level for rooms, etc!-->
             <li Class="CompProperties_Glower">
                 <glowRadius>2</glowRadius>
                 <glowColor>(0,100,100,0)</glowColor>

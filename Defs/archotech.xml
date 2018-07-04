@@ -13,12 +13,7 @@
             <allowFlip>false</allowFlip>
         </graphicData>
         <uiIconPath>archotech</uiIconPath>
-        <comps>
-            <li Class="CompProperties_Glower">
-                <glowRadius>3</glowRadius>
-                <glowColor>(150,0,0,0)</glowColor>
-            </li>
-        </comps>
+
 
         <!--Construction costs, prereqs, etc-->
         <statBases>
@@ -30,5 +25,12 @@
         <!--How it functions-->
         <thingClass>Building_WorkTable</thingClass>
         <useHitPoints>False</useHitPoints>
+        <comps>
+            <!--This isn't just visual - it affects the light-level for rooms, etc!-->
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(150,0,0,0)</glowColor>
+            </li>
+        </comps>
     </ThingDef>
 </Defs>

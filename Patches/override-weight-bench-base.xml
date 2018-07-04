@@ -6,7 +6,7 @@ Override the base-game's BenchBase class, so that normal stoves (and benches) ar
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[@Name="BenchBase"]/statBases/Mass</xpath>
         <value>
-            <Mass>150</Mass>
+            <Mass>100</Mass>
         </value>
     </Operation>
 </Patch>

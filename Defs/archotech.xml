@@ -32,5 +32,8 @@
                 <glowColor>(150,0,0,0)</glowColor>
             </li>
         </comps>
+        <thingSetMakerTags>
+            <li>RewardSpecial</li>
+        </thingSetMakerTags>
     </ThingDef>
 </Defs>

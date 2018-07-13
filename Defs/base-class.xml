@@ -22,9 +22,6 @@
         <useHitPoints>True</useHitPoints>
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-        <recipes>
-            <li>CookMealSimple</li>
-        </recipes>
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>

@@ -43,6 +43,9 @@
         </statBases>
 
         <!--How it functions-->
+        <recipes>
+            <li>CookMealSimple</li>
+        </recipes>
         <comps>
             <li Class="CompProperties_Refuelable">
                 <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>

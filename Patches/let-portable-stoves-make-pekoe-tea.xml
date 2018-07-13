@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Override the base-game's BenchBase class, so that normal stoves (and benches) are too heavy to take on caravans.
+-->
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@ParentName="MakeableDrugBase" and defName="PsychiteTea"]/recipeMaker/recipeUsers</xpath>
+        <value>
+            <li>PortableStoveChemfuel</li>
+            <li>PortableStoveArchotech</li>
+        </value>
+    </Operation>
+</Patch>

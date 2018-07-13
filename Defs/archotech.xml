@@ -18,11 +18,15 @@
         <!--Construction costs, prereqs, etc-->
         <statBases>
             <Mass>3</Mass>
-            <MarketValue>200</MarketValue>
+            <MarketValue>2000</MarketValue>
             <WorkTableWorkSpeedFactor>0.95</WorkTableWorkSpeedFactor> <!--This is actually functionality...-->
         </statBases>
 
         <!--How it functions-->
+        <recipes>
+            <li>CookMealSimple</li>
+            <li>CookMealFine</li>
+        </recipes>
         <thingClass>Building_WorkTable</thingClass>
         <useHitPoints>False</useHitPoints>
         <comps>
